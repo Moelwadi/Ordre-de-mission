@@ -22,7 +22,99 @@ nav.navbar .user-profile .img {
   background-color: aqua;
   border-radius: 50%;
 }
+nav.navbar .user-profile .user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
 nav.navbar .user-profile .user-grp {
   display: flex;
   justify-content: space-between;
+}
+
+nav.navbar .settings {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav.navbar .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+nav.navbar .nav-link a {
+  display: inline-flex; /* Ensures proper alignment */
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Set your desired size */
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(17.01deg 100% 63.61%);
+  border-radius: 5px;
+  border: 2px solid hsl(17.01deg 100% 63.61%);
+  margin: 0 4px; /* Optional: spacing between icons */
+  font-size: 18px; /* Adjust icon size */
+  position: relative;
+}
+
+nav.navbar .nav-link a:hover {
+  background-color: white;
+  color: hsl(17.01deg 100% 63.61%);
+}
+nav.navbar .nav-link a::before {
+  content: var(--titel);
+  background-color: hsl(17.01deg 100% 63.61%);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.1s ease-in-out;
+  opacity: 0;
+  width: fit-content;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+nav.navbar .nav-link a::after {
+  transition: all 0.1s ease-in-out;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -20px;
+  transform: rotate(45deg);
+  background-color: hsl(17.01deg 100% 63.61%);
+  opacity: 0;
+}
+nav.navbar .nav-link a:hover::before {
+  opacity: 1;
+}
+nav.navbar .nav-link a:hover::after {
+  opacity: 1;
+}
+nav.navbar .nav-link a:active {
+  opacity: 0.5;
+}
+
+nav.navbar .settings .notif {
+  font-size: 1.4rem;
+  position: relative;
+}
+
+nav.navbar .settings .notif::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  background-color: hsl(17.01deg 100% 63.61%);
+  border-radius: 50%;
 }

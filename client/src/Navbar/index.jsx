@@ -1,4 +1,7 @@
 import "./index.css";
+const LinksByRole = {
+  "": { uitext: 'onClick(navigateTo("url"))' },
+};
 export default function () {
   return (
     <nav className="navbar">
@@ -18,11 +21,23 @@ export default function () {
         </div>
       </div>
       <div className="nav-link">
-        <a href="">Lorem, ipsum.</a>
-        <a href="">Esse, perspiciatis!</a>
-        <a href="">Amet, quam.</a>
-        <a href="">Eligendi, veniam.</a>
-        <a href="">Voluptas, tempore.</a>
+        <a style={{ "--titel": "'Bon de Sortie'" }} href="">
+          <i className="fa-solid fa-file-arrow-up"></i>
+        </a>
+        <a style={{ "--titel": "'Ordre de Mission'" }} href="">
+          <i className="fa-solid fa-briefcase"></i>
+        </a>
+        <a style={{ "--titel": "'Liste des Ordres de Mission'" }} href="">
+          <i className="fa-solid fa-list"></i>
+        </a>
+        <a style={{ "--titel": "'Liste des Bons de Sortie'" }} href="">
+          <i className="fa-solid fa-list-check"></i>
+        </a>
+      </div>
+      <div className="settings">
+        <div className="notif">
+          <i className="fa-solid fa-bell"></i>
+        </div>
       </div>
     </nav>
   );
