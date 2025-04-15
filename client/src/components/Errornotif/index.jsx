@@ -3,15 +3,15 @@ import { errorFlag } from "../../data";
 import "./index.css";
 export default function () {
   const [error, setError] = errorFlag.useStore();
-  useEffect(() => {
-    if (!error) return;
+  // useEffect(() => {
+  //   if (!error) return;
 
-    const timer = setTimeout(() => {
-      setError({ value: false });
-    }, 3000); // 3 seconds
+  //   const timer = setTimeout(() => {
+  //     setError({ value: false });
+  //   }, 3000); // 3 seconds
 
-    return () => clearTimeout(timer); // Cleanup if component unmounts
-  }, [error]);
+  //   return () => clearTimeout(timer); // Cleanup if component unmounts
+  // }, [error]);
   if (!error.value) return;
   return (
     <div className="error-popup">
