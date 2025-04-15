@@ -9,3 +9,6 @@
   background-color: white;
   color: hsl(17.01deg 100% 63.61%);
 }
+textarea {
+  resize: none !important;
+}

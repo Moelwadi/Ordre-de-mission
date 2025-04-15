@@ -5,6 +5,8 @@ nav.navbar {
   box-shadow: 0 0 20px 0 rgb(222, 222, 222);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: fixed;
+  top: 0;
 }
 nav.navbar .user-profile {
   display: flex;
