@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import UINotifications from "./utils/UINotifications";
-import MessionOrder from "./Routes/MessionOrder";
+import Login from "./Routes/Login";
 
 function App() {
   return (
@@ -10,7 +10,8 @@ function App() {
       <Navbar />
       <UINotifications />
       <Routes>
-        <Route path="/" element={<MessionOrder />} />
+        <Route path="/" element={<>empty</>} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );
