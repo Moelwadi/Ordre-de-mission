@@ -1,0 +1,43 @@
+.list-order {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.list-order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-order-thead {
+  background-color: hsl(17.01deg 100% 63.61%);
+  color: #fff;
+}
+
+.list-order-table th,
+.list-order-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.list-order-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.list-order-row:hover {
+  background-color: #f9f9f9;
+}
+
+.list-order-approve-btn {
+  background-color: hsl(17.01deg 100% 63.61%);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.list-order-approved {
+  color: green;
+  font-weight: bold;
+}
