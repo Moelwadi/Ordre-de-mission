@@ -1,0 +1,43 @@
+.list-bon-sortie {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.list-bon-sortie-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-bon-sortie-thead {
+  background-color: hsl(17.01deg 100% 63.61%);
+  color: #fff;
+}
+
+.list-bon-sortie-table th,
+.list-bon-sortie-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.list-bon-sortie-row {
+  border-bottom: 1px solid #ddd;
+}
+
+.list-bon-sortie-row:hover {
+  background-color: #f9f9f9;
+}
+
+.list-bon-sortie-approve-btn {
+  background-color: hsl(17.01deg 100% 63.61%);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.list-bon-sortie-approved {
+  color: green;
+  font-weight: bold;
+}

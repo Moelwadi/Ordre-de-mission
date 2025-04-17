@@ -1,4 +1,5 @@
 import Errornotif from "../components/Errornotif";
+import Successnotif from "../components/Successnotif";
 import Warningnotif from "../components/Warningnotif";
 
 export default function UINotifications() {
@@ -16,6 +17,7 @@ export default function UINotifications() {
     >
       <Errornotif />
       <Warningnotif />
+      <Successnotif />
     </div>
   );
 }

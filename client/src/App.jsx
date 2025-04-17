@@ -6,6 +6,7 @@ import Login from "./Routes/Login";
 import MessionOrder from "./Routes/MessionOrder";
 import Bonsortie from "./Routes/Bonsortie";
 import ListOrderMession from "./Routes/ListOrderMession";
+import ListBonSortie from "./Routes/ListBonSortie";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/order-mission" element={<MessionOrder />} />
         <Route path="/bon-sortie" element={<Bonsortie />} />
         <Route path="/list-order-mession" element={<ListOrderMession />} />
+        <Route path="/list-bon-sortie" element={<ListBonSortie />} />
         <Route path="*" element={<>not found</>} />
       </Routes>
     </>
